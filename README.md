@@ -1,4 +1,4 @@
-# CSharp
+# C#
 ### Description
 Repository root for C# projects.
 
