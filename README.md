@@ -1,4 +1,4 @@
-# CSharp - Python
+# CSharp
 ### Description
 Repository root for C# projects.
 
