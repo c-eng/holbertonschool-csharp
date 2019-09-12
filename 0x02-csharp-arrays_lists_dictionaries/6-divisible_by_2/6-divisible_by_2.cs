@@ -8,7 +8,7 @@ class List
         List<bool> yourList = new List<bool>();
         foreach (int num in myList)
         {
-            if (num % 2 == 0 && num != 0)
+            if (num % 2 == 0)
                 yourList.Add(true);
             else
                 yourList.Add(false);
