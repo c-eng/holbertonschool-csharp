@@ -6,6 +6,11 @@ class LList
     {
         LinkedListNode<int> newNode = new LinkedListNode<int>(n);
         LinkedListNode<int> strider = myLList.First;
+        if (strider == null)
+        {
+            myLList.AddFirst(newNode);
+            return (newNode);
+        }
         if (strider.Value > n)
         {
             myLList.AddBefore(strider, newNode);
