@@ -1,6 +1,6 @@
-# 0x01. C# - if/else, loops, functions
+# 0x02. C# - Data Structures: Arrays, Lists, Dictionaries
 ### Description
-Basic logic, flow, functions in C#
+Basic data structures in C#.
 
 ## Directory Contents
 
