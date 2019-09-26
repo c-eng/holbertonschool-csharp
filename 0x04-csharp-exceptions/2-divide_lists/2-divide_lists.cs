@@ -6,8 +6,6 @@ class List
     {
         List<int> newList = new List<int>();
         int nu = 0;
-        try
-        {
             for (int i = 0; i < listLength; i++)
             {
                 nu = 0;
@@ -19,13 +17,12 @@ class List
                 {
                     Console.WriteLine("Cannot divide by zero");
                 }
+                catch (ArgumentOutOfRangeException)
+                {
+                    Console.WriteLine("Out of range");
+                }
                 newList.Add(nu);
             }
-        }
-        catch (ArgumentOutOfRangeException)
-        {
-            Console.WriteLine("Out of range");
-        }
         return (newList);
     }
 }
