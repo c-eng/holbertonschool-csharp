@@ -34,10 +34,9 @@ namespace Enemies
             set {name = value;}
         }
         ///<summary>Overrides default ToString method.</summary>
-        ///<returns>Zombie name: {name} / Health: {health}.</returns>
         public override string ToString()
         {
-            return "Zombie name: " + name + " / Total Health: " + health;
+            return String.Format("Zombie Name: {0} / Total Health: {1}", name, health);
         }
     }
 }
