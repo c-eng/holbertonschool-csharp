@@ -26,9 +26,10 @@ namespace Tests
         [Test]
         public void CamelCase_Words()
         {
-            string test = "iThoughtWhatIdDoWasIdPretendIWasOneOfThoseDeafMutes";
+            //string test = "iThoughtWhatIdDoWasIdPretendIWasOneOfThoseDeafMutes";
+            string test = "wowWow";
             int result = Text.Str.CamelCase(test);
-            Assert.That(result, Is.EqualTo(15));
+            Assert.That(result, Is.EqualTo(2));
         }
         [Test]
         public void CamelCase_Null()
