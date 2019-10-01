@@ -9,6 +9,8 @@ namespace Text
         public static int CamelCase(string s)
         {
             int count = 0;
+            if (s == null)
+                return (0);
             if (s.Length != 0)
                 count++;
             foreach (char daffy in s)

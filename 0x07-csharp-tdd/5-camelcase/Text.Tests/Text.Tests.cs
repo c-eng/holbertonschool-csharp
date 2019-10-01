@@ -30,5 +30,12 @@ namespace Tests
             int result = Text.Str.CamelCase(test);
             Assert.That(result, Is.EqualTo(15));
         }
+        [Test]
+        public void CamelCase_Null()
+        {
+            string test = null;
+            int result = Text.Str.CamelCase(test);
+            Assert.That(result, Is.EqualTo(0));
+        }
     }
 }
