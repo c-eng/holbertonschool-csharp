@@ -8,11 +8,9 @@ namespace Text
         ///<summary>Counts words in a camelCase string.</summary>
         public static int CamelCase(string s)
         {
-            int count = 0;
-            if (s == null)
+            int count = 1;
+            if (s == null || s.Length == 0)
                 return (0);
-            if (s.Length != 0)
-                count++;
             foreach (char daffy in s)
             {
                 if (Char.IsUpper(daffy))
