@@ -13,6 +13,7 @@ namespace MyMath.Tests
             int c = MyMath.Operations.Add(a, b);
             Assert.AreEqual(a + b, c);
         }
+        /*
         [Test]
         public void Add_Positive_Negative()
         {
@@ -29,5 +30,6 @@ namespace MyMath.Tests
             int c = MyMath.Operations.Add(a, b);
             Assert.AreEqual(a + b, c);
         }
+        */
     }
 }
