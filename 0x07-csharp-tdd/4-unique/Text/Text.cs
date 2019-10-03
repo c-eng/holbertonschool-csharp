@@ -26,7 +26,6 @@ namespace Text
             }
             foreach (KeyValuePair<char, int> uniq in hold)
             {
-                Console.WriteLine("{0} : {1}", uniq.Key, uniq.Value);
                 if (uniq.Value < idx || idx == -1)
                     idx = uniq.Value;
             }
