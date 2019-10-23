@@ -4,7 +4,7 @@ using System.Collections.Generic;
 ///<summary>Algebraic operations on matricies.</summary>
 class MatrixMath
 {
-    ///<summary>Sum of two matricies.</summary>
+    ///<summary>Product of two matricies.</summary>
     public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
     {
         double[,] bad = new double[,] {{-1}};
