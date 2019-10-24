@@ -24,9 +24,9 @@ class MatrixMath
                 temp = 0;
                 for (int k = 0; k < 2; k++)
                 {
-                    temp += rotate[i, k] * matrix[k, j];
+                    temp += matrix[i, k] * rotate[k, j];
                 }
-                matrix3[i, j] = Math.Round(temp);
+                matrix3[i, j] = Math.Round(temp, 2);
             }
         }
         return (matrix3);
