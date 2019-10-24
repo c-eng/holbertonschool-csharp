@@ -17,18 +17,10 @@ class MatrixMath
         {
             return (bad);
         }
-        for (int i = 0; i < 2; i++)
-        {
-            for (int j = 0; j < 2; j++)
-            {
-                temp = 0;
-                for (int k = 0; k < 2; k++)
-                {
-                    temp += matrix[i, k] * rotate[k, j];
-                }
-                matrix3[i, j] = Math.Round(temp, 2);
-            }
-        }
+        matrix3[0, 0] = Math.Round(rotate[0, 0] * matrix[0, 0] + rotate[1, 0] * matrix[0, 1], 2);
+        matrix3[1, 0] = Math.Round(rotate[0, 0] * matrix[1, 0] + rotate[1, 0] * matrix[1, 1], 2);
+        matrix3[0, 1] = Math.Round(rotate[0, 1] * matrix[0, 0] + rotate[1, 1] * matrix[0, 1], 2);
+        matrix3[1, 1] = Math.Round(rotate[0, 1] * matrix[1, 0] + rotate[1, 1] * matrix[1, 1], 2);
         return (matrix3);
     }
 }
