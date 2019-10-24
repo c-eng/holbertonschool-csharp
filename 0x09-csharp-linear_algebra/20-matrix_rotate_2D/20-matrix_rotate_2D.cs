@@ -8,8 +8,8 @@ class MatrixMath
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
         double[,] bad = new double[,] {{-1}};
-        double[,] rotate = new double[2, 2] {{Math.Cos(angle), -1 * Math.Sin(angle)},
-                                               {Math.Sin(angle), Math.Cos(angle)}};
+        double[,] rotate = new double[2, 2] {{Math.Cos(angle), Math.Sin(angle)},
+                                               {-1 * Math.Sin(angle), Math.Cos(angle)}};
         double[,] matrix3 = new double[2, 2];
         double temp;
 
