@@ -26,7 +26,7 @@ class MatrixMath
                 {
                     temp += rotate[i, k] * matrix[k, j];
                 }
-                matrix3[i, j] = Math.Round(temp, 2);
+                matrix3[i, j] = Math.Round(temp);
             }
         }
         return (matrix3);
