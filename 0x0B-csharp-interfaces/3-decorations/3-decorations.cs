@@ -33,7 +33,7 @@ class Door : Base, IInteractive
 
 class Decoration : Base, IInteractive, IBreakable
 {
-    public bool isQuestItem;
+    public bool isQuestItem = false;
     public int durability { get; set; }
 
     public Decoration(string nm = "Decoration", int db = 1, bool qt = false)
