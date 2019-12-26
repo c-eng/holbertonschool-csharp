@@ -53,7 +53,7 @@ public class Player
     ///<summary>Prints Player health.</summary>
     public void PrintHealth()
     {
-        Console.WriteLine($"{name} has {hp} / {maxHp} health.");
+        Console.WriteLine($"{name} has {hp} / {maxHp} health");
     }
 
     ///<summary>Calculates Player damage.</summary>
