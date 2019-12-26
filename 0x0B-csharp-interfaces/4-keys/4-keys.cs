@@ -69,10 +69,10 @@ class Key : Base, ICollectable
 
     public bool isCollected { get; set; }
 
-    public Key(string nm = "Key", bool cl = false)
+    public Key(string name = "Key", bool isCollected = false)
     {
-        name = nm;
-        isCollected = cl;
+        this.name = name;
+        this.isCollected = isCollected;
     }
     public void Collect()
     {
